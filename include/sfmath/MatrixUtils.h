@@ -2,9 +2,8 @@
 
 #include "Vec2.hpp"
 #include "Vec3.hpp"
-#include "Mat4x4.hpp"
 
-    namespace sfmath{
+namespace sfmath{
     class MatrixUtils{
     public:
         static float ToRadians(float degrees){return degrees * 0.0174533f;}
