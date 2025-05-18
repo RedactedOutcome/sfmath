@@ -2,7 +2,7 @@
 
 #include <Vec3.hpp>
 
-    namespace sfmath{
+namespace sfmath{
     class Ray{
     public:
         Vec3<float> m_Origin;
