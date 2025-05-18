@@ -4,7 +4,7 @@ project(sfmath)
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 add_library(sfmath STATIC ${SOURCES})
 
-target_include_directories(sfmath include)
+target_include_directories(sfmath PUBLIC include/)
 target_precompile_headers(sfmath PRIVATE "include/sfmath/pch.h")
 
 if(MSVC)
