@@ -1,5 +1,5 @@
 #pragma once
-#include "Core."
+#include "Core.h"
 
 //TODO: More static asserts for easier error messages
 namespace sfmath{
