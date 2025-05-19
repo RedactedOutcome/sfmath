@@ -19,7 +19,14 @@ namespace sfmath{
         
         void Copy(const SMat4x4& matrix)SFMATH_NOEXCEPT;
         void Copy(const HMat4x4& matrix)SFMATH_NOEXCEPT;
-
+    public:
+        SMat4x4 operator*(const SMat4x4& rhs) const SFMATH_NOEXCEPT;
+        SMat4x4 operator*(const HMat4x4& rhs) const SFMATH_NOEXCEPT;
+        SMat4x4 operator*(const float* rhs) const SFMATH_NOEXCEPT;
+        SMat4x4& operator*=(const SMat4x4& rhs) SFMATH_NOEXCEPT;
+        SMat4x4& operator*=(const HMat4x4& rhs) SFMATH_NOEXCEPT;
+        SMat4x4& operator*=(const float* rhs) SFMATH_NOEXCEPT;
+    public:
         /// @brief directly retrieves a matrix value depending on row and column. Doesnt do safety checks
         inline float GetValue(unsigned char row, unsigned char col) const SFMATH_NOEXCEPT{
             return m_Data[row * 4 + col];
@@ -32,14 +39,7 @@ namespace sfmath{
         inline void AddValue(unsigned char row, unsigned char col, float value) SFMATH_NOEXCEPT{
             m_Data[row * 4 + col] += value;
         }
-
-        SMat4x4 operator*(const SMat4x4& rhs) const SFMATH_NOEXCEPT;
-        SMat4x4 operator*(const HMat4x4& rhs) const SFMATH_NOEXCEPT;
-        SMat4x4 operator*(const float* rhs) const SFMATH_NOEXCEPT;
-        SMat4x4& operator*=(const SMat4x4& rhs) SFMATH_NOEXCEPT;
-        SMat4x4& operator*=(const HMat4x4& rhs) SFMATH_NOEXCEPT;
-        SMat4x4& operator*=(const float* rhs) SFMATH_NOEXCEPT;
-
+    public:
         Vec4<float> GetRow(int row)SFMATH_NOEXCEPT{
             return Vec4<float>(m_Data[row * 4] + 0, m_Data[row * 4] + 1,m_Data[row * 4] + 2, m_Data[row * 4] + 3);
         }
