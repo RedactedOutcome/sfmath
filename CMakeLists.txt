@@ -5,6 +5,7 @@ file(GLOB_RECURSE SOURCES "src/*.cpp")
 add_library(sfmath STATIC ${SOURCES})
 
 target_include_directories(sfmath PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include/")
+target_include_directories(sfmath PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include/sfmath/")
 target_precompile_headers(sfmath PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include/sfmath/pch.h")
 
 if(MSVC)
