@@ -6,7 +6,7 @@
 #include "SMat4x4.h"
 #endif
 
-namespace fsmath{
+namespace sfmath{
     class SMat4x4;
     /// @brief A column major 4x4 matrix
     class HMat4x4{

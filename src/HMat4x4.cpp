@@ -1,7 +1,7 @@
 #include "sfmath/pch.h"
 #include "HMat4x4.h"
 
-namespace fsmath{
+namespace sfmath{
     HMat4x4::HMat4x4() SFMATH_NOEXCEPT{}
     HMat4x4::HMat4x4(float* data, bool canFree)SFMATH_NOEXCEPT : m_Data(data), m_CanFree(canFree){}
     HMat4x4::~HMat4x4()SFMATH_NOEXCEPT{
