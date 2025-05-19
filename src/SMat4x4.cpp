@@ -53,8 +53,11 @@ namespace sfmath{
         return result;
     }
     SMat4x4 SMat4x4::operator*(const HMat4x4& rhs) const SFMATH_NOEXCEPT{
-        if(!rhs.GetData())return *this;
         SMat4x4 result;
+        if(!rhs.GetData()){
+            result.Clear();
+            return result;
+        }
         for(uint8_t row = 0; row < 4; row++){
             for(uint8_t col = 0; col < 4; col++){
                 int offset = row * 4 + col;
