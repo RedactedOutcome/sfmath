@@ -38,7 +38,7 @@ namespace sfmath{
         SMat4x4 operator*(const float* rhs) const SFMATH_NOEXCEPT;
         SMat4x4& operator*=(const SMat4x4& rhs) SFMATH_NOEXCEPT;
         SMat4x4& operator*=(const HMat4x4& rhs) SFMATH_NOEXCEPT;
-        SMat4x4& operator*=(const float* rhs) const SFMATH_NOEXCEPT;
+        SMat4x4& operator*=(const float* rhs) SFMATH_NOEXCEPT;
 
         Vec4<float> GetRow(int row)SFMATH_NOEXCEPT{
             return Vec4<float>(m_Data[row * 4] + 0, m_Data[row * 4] + 1,m_Data[row * 4] + 2, m_Data[row * 4] + 3);
