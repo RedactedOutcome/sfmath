@@ -1,7 +1,7 @@
 #include "sfmath/pch.h"
 
 #include "sfmath/MatrixUtils.h"
-#include "sfmath/Vec4.h"
+#include "sfmath/Vec4.hpp"
 
 void MatrixUtils::MultiplyMat4x4(float* dst, float* first, float* second){
     float data[16];
