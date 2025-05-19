@@ -2,7 +2,7 @@
 #include "SMat4x4.h"
 #include "HMat4x4.h"
 
-namespace fsmath{
+namespace sfmath{
     SMat4x4::SMat4x4()SFMATH_NOEXCEPT{}
     SMat4x4::SMat4x4(const float* data)SFMATH_NOEXCEPT{
         for(unsigned char i = 0; i < 16; i++)
@@ -80,7 +80,7 @@ namespace fsmath{
             memset(m_Data, 0, sizeof(m_Data));
             return *this;
         }
-        
+
         for(uint8_t row = 0; row < 4; row++){
             for(uint8_t col = 0; col < 4; col++){
                 int offset = row * 4 + col;
