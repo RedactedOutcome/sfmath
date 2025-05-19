@@ -1,9 +1,12 @@
 #pragma once
-
+#define SFMATH_SMAT4x4
 #include "Vec4.hpp"
 
+#ifndef SFMATH_HMAT4x4
+#include "HMat4x4.h"
+#endif
+
 namespace sfmath{
-    class HMat4x4;
     /// @brief A mat4x4 where its data is on the stack compared to the heap
     class SMat4x4{
     public:

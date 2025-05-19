@@ -1,5 +1,10 @@
 #pragma once
+#define SFMATH_HMAT4x4
 #include "Core.h"
+
+#ifndef SFMATH_SMAT4x4
+#include "SMat4x4.h"
+#endif
 
 namespace fsmath{
     class SMat4x4;
