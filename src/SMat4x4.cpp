@@ -11,7 +11,7 @@ namespace sfmath{
     SMat4x4::SMat4x4(const SMat4x4& mat)SFMATH_NOEXCEPT{
         memcpy(m_Data, mat.m_Data, sizeof(float) * 16);
     }
-    SMat4x4::~SMAT4x4()SFMATH_NOEXCEPT{}
+    SMat4x4::~SMat4x4()SFMATH_NOEXCEPT{}
 
     void SMat4x4::SetIdentity()SFMATH_NOEXCEPT{
         memset(&m_Data, 0, sizeof(m_Data));
