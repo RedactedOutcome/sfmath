@@ -1,10 +1,7 @@
 #pragma once
-#define SFMATH_SMAT4x4
+
 #include "Vec4.hpp"
 
-#ifndef SFMATH_HMAT4x4
-#include "HMat4x4.h"
-#endif
 
 namespace sfmath{
     class HMat4x4;

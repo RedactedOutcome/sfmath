@@ -81,6 +81,8 @@ namespace sfmath{
             return *this;
         }
 
+        SMat4x4 copy(*this);
+
         for(uint8_t row = 0; row < 4; row++){
             for(uint8_t col = 0; col < 4; col++){
                 int offset = row * 4 + col;
