@@ -8,7 +8,7 @@ target_include_directories(sfmath PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/include/")
 target_precompile_headers(sfmath PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/include/sfmath/pch.h")
 
 if(MSVC)
-    target_sources(sfmath PRIVATE src/pch.cpp)
+    target_sources(sfmath PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/src/pch.cpp")
 endif()
 
 # Using Other precompiled headers
