@@ -91,4 +91,8 @@ namespace fsmath{
 
         return *this;
     }
+    void HMat4x4::SetData(float* data, bool canFree)SFMATH_NOEXCEPT{
+        m_Data = data;
+        m_CanFree = canFree;
+    }
 }

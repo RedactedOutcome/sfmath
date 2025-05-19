@@ -24,6 +24,7 @@ namespace fsmath{
         HMat4x4 operator*(const HMat4x4& right)SFMATH_NOEXCEPT;
         HMat4x4& operator*=(const HMat4x4& right)SFMATH_NOEXCEPT;
     public:
+        void SetData(float* data, bool canFree)SFMATH_NOEXCEPT;
         /// @brief returns a value inside the matrix if has data if not then 0
         float GetValue(int row, int col) const SFMATH_NOEXCEPT;
         void SetValue(int row, int col, float value) SFMATH_NOEXCEPT;
