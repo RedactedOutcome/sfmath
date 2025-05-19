@@ -7,6 +7,7 @@
 #endif
 
 namespace sfmath{
+    class HMat4x4;
     /// @brief A mat4x4 where its data is on the stack compared to the heap
     class SMat4x4{
     public:
