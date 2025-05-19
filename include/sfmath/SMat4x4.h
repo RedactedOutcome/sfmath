@@ -13,6 +13,7 @@ namespace sfmath{
         SMat4x4(const SMat4x4& mat)SFMATH_NOEXCEPT;
         ~SMat4x4()SFMATH_NOEXCEPT;
 
+        void Clear()SFMATH_NOEXCEPT;
         /// @brief Zeros out the entire matrix and sets to an identity matrix
         void SetIdentity() SFMATH_NOEXCEPT;
         
@@ -34,8 +35,10 @@ namespace sfmath{
 
         SMat4x4 operator*(const SMat4x4& rhs) const SFMATH_NOEXCEPT;
         SMat4x4 operator*(const HMat4x4& rhs) const SFMATH_NOEXCEPT;
+        SMat4x4 operator*(const float* rhs) const SFMATH_NOEXCEPT;
         SMat4x4& operator*=(const SMat4x4& rhs) SFMATH_NOEXCEPT;
         SMat4x4& operator*=(const HMat4x4& rhs) SFMATH_NOEXCEPT;
+        SMat4x4& operator*=(const float* rhs) const SFMATH_NOEXCEPT;
 
         Vec4<float> GetRow(int row)SFMATH_NOEXCEPT{
             return Vec4<float>(m_Data[row * 4] + 0, m_Data[row * 4] + 1,m_Data[row * 4] + 2, m_Data[row * 4] + 3);
