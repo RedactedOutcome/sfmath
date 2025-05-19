@@ -41,7 +41,7 @@ namespace sfmath{
         }
     public:
         //TODO: make only available for type float/double
-        typename std::enable_if<std::is_floating_point<T>::value, void>::type
+        typename std::enable_if<std::is_floating_point<TYPE>::value, void>::type
         Normalize() SFMATH_NOEXCEPT{
             TYPE mag = GetMagnitude();
             if(mag <= 1)return;
