@@ -97,7 +97,7 @@ namespace sfmath{
             return Vec2<TYPE>(m_X - rhs.m_X, m_Y - rhs.m_Y);
         }
         Vec2<TYPE> operator*(const Vec2<TYPE> rhs) const noexcept{
-            return Vec2<TYPE>(m_X * rhs.m_X, m_Y * rhs.m_Y,);
+            return Vec2<TYPE>(m_X * rhs.m_X, m_Y * rhs.m_Y);
         }
         Vec2<TYPE> operator/(const Vec2<TYPE> rhs) const noexcept{
             return Vec2<TYPE>(m_X / rhs.m_X, m_Y / rhs.m_Y);
