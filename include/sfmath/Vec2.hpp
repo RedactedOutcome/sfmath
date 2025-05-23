@@ -91,16 +91,16 @@ namespace sfmath{
         }
 
         Vec2<TYPE> operator+(const Vec2<TYPE> rhs) const noexcept{
-            return Vec2<TYPE>(m_X + rhs.m_X, m_Y + rhs.m_y);
+            return Vec2<TYPE>(m_X + rhs.m_X, m_Y + rhs.m_Y);
         }
         Vec2<TYPE> operator-(const Vec2<TYPE> rhs) const noexcept{
-            return Vec2<TYPE>(m_X - rhs.m_X, m_Y - rhs.m_y);
+            return Vec2<TYPE>(m_X - rhs.m_X, m_Y - rhs.m_Y);
         }
         Vec2<TYPE> operator*(const Vec2<TYPE> rhs) const noexcept{
-            return Vec2<TYPE>(m_X * rhs.m_X, m_Y * rhs.m_y,);
+            return Vec2<TYPE>(m_X * rhs.m_X, m_Y * rhs.m_Y,);
         }
         Vec2<TYPE> operator/(const Vec2<TYPE> rhs) const noexcept{
-            return Vec2<TYPE>(m_X / rhs.m_X, m_Y / rhs.m_y);
+            return Vec2<TYPE>(m_X / rhs.m_X, m_Y / rhs.m_Y);
         }
 
         inline bool operator==(const Vec2<TYPE>& rhs) const noexcept {
