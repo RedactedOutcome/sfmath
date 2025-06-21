@@ -2,12 +2,12 @@
 
 #include "Vec4.hpp"
 
-
 namespace sfmath{
     class HMat4x4;
-    /// @brief A mat4x4 where its data is on the stack compared to the heap
+    /// @brief A mat4x4 where its data is stored inside the class
     class SMat4x4{
     public:
+        /// Just a default constructor doesnt set identity
         SMat4x4()SFMATH_NOEXCEPT;
         SMat4x4(const float* data)SFMATH_NOEXCEPT;
         SMat4x4(const SMat4x4& mat)SFMATH_NOEXCEPT;
