@@ -5,7 +5,7 @@
 //TODO: More static asserts for easier error messages
 
 namespace sfmath{
-    template<typename TYPE>
+    template<typename TYPE=float>
     class Vec3{
     public:
         TYPE m_X = static_cast<TYPE>(0);

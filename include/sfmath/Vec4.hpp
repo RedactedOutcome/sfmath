@@ -3,7 +3,7 @@
 #include "Core.h"
 
 namespace sfmath{
-    template <typename TYPE>
+    template <typename TYPE=float>
     class Vec4{
     public:
         TYPE m_X = static_cast<TYPE>(0);

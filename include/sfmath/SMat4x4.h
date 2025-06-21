@@ -9,10 +9,12 @@ namespace sfmath{
     public:
         /// Just a default constructor doesnt set identity
         SMat4x4()SFMATH_NOEXCEPT;
+        /// Sets matrix data to a copy of a 16 byte 4x4 matrix
         SMat4x4(const float* data)SFMATH_NOEXCEPT;
+        /// Sets matrix data to a copy of an SMat4x4
         SMat4x4(const SMat4x4& mat)SFMATH_NOEXCEPT;
         ~SMat4x4()SFMATH_NOEXCEPT;
-
+        
         void Clear()SFMATH_NOEXCEPT;
         /// @brief Zeros out the entire matrix and sets to an identity matrix
         void SetIdentity() SFMATH_NOEXCEPT;
